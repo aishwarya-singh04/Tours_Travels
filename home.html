@@ -14,13 +14,21 @@
             background-color: black;
             
         }
+        #content::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
         img{
-            border: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
             width: 450px;
             height: 100vh;
             padding: 5px 5px 5px 5px;
-            margin: 10px 10px 50px 10px;
-            border-radius: 4px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+            
             float: left;
         }
 
@@ -28,16 +36,67 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
             color: whitesmoke;
+           
             font-size: 90px;
+            text-shadow: 1px 1px 2px rgba(150, 227, 247, 0.877);
             
             
+        }
+
+        a{
+            background-color: rgba(255,255,255,0.3);
+            color: white; 
+            padding: 15px 20px; 
+            border: 1px solid white;
+            text-align: center; 
+            display: inline-block; 
+            font-size: 18px; 
+            cursor: pointer; 
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin: 6px;
+            box-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+            
+            
+        
+        }
+        a:hover{
+            background-color: rgba(255, 255, 255, 0.459);
+            
+            color: whitesmoke;
+
+        }
+        a:active{
+            background-color: rgba(209, 136, 27, 0.767);
+        }
+        #left-side{
+            width: 35%;
+            float: left;
+
+        }
+        #right-side{
+            text-align: center;
+           width: 65%;
+           float: right;
+           margin-top: 240px;
         }
     </style>
 </head>
 <body>
+    <div id="content" style="border: 3px solid white;">
+    <div id="left-side">
     <img src="img/c2.jpg" alt="_blank">
-    
-    <h1 >For Wanderers !</h1>
+    </div>  
 
+    <div id="right-side">
+    <h1 >For Wanderers !</h1>
+    
+        <div id="button">
+            <a href="signup.html">Explore Now!</a>
+        </div>
+    
+    </div>
+</div>
 </body>
 </html>
