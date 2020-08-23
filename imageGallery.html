@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations Gallery</title>
+    <link rel="stylesheet" href="css/cfloat.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/cycle2.js"></script>
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
+	<script type="text/javascript" src="js/lightbox.min.js"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            background: #84e8dc;
+            background: -moz-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
+            background: -webkit-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
+            background: linear-gradient(135deg, #80dfd4 0%, #ece57c 100%);
+        }
+        .thumbnails{
+            margin-left: 75px;
+            margin-top: 40px;
+            
+        }
+        .thumbnails a{
+            float: left;                                                                  /*if we are using float then we need to add an additional class (group) to clear the float of its children*/
+            width: 200px; 
+            
+            margin-bottom: 5px;
+            margin-right: 5px;
+           
+            box-sizing: border-box;
+        }
+            
+
+        .thumbnails img{
+            width: 200px;
+            height: 150px;
+            display: block;                                                             /* to avoid additional spacing due to margins and padding as images are inline elements by default*/
+            transition: all 0.2s ease-in-out;
+            /*margin-right: 15px;*/
+        }
+
+        .thumbnails:hover img{                                                                                 /* when parents div thumbnail is selected and hovered over .. all images are selected */
+            opacity: 0.6;
+            transform: scale(0.92);
+        }
+            
+
+        .thumbnails img:hover{
+            opacity: 1;
+            transform: scale(1) rotate(2deg);
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            font-size: small;
+            background: rgba(0, 0, 0, 0.719);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content-area{
+            /*border-top: 3px solid #e5e9dc;
+            border-bottom: 3px solid #e5e9dc;*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:26px;
+            margin-top: 20px;
+            text-align: center;
+            font-style: bold;
+            color:darkslategray;
+        }
+
+        .main-area{
+            width: 100%;
+            float: left;
+            padding-right: 40px;
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="content-area group">
+    <h1>Explore India!</h1>
+    <div class="main-area" >
+    <div class="thumbnails group">
+        <a href="img/1.jpg" data-lightbox="gallery" data-title="picture"><img src="img/1.jpg" alt="_blank"></a>
+        <a href="img/2.jpg" data-lightbox="gallery" data-title="picture"><img src="img/2.jpg" alt="_blank"></a>
+        <a href="img/3.jpg" data-lightbox="gallery" data-title="picture"><img src="img/3.jpg" alt="_blank"></a>
+        <a href="img/4.jpg" data-lightbox="gallery" data-title="picture"><img src="img/4.jpg" alt="_blank"></a>
+        <a href="img/5.jpg" data-lightbox="gallery" data-title="picture"><img src="img/5.jpg" alt="_blank"></a>
+        <a href="img/6.jpg" data-lightbox="gallery" data-title="picture"><img src="img/6.jpg" alt="_blank"></a>
+        <a href="img/7.jpg" data-lightbox="gallery" data-title="picture"><img src="img/7.jpg" alt="_blank"></a>
+        <a href="img/8.jpg" data-lightbox="gallery" data-title="picture"><img src="img/8.jpg" alt="_blank"></a>
+        <a href="img/9.jpg" data-lightbox="gallery" data-title="picture"><img src="img/9.jpg" alt="_blank"></a>
+        <a href="img/10.jpg" data-lightbox="gallery" data-title="picture"><img src="img/10.jpg" alt="_blank"></a>
+        <a href="img/11.jpg" data-lightbox="gallery" data-title="picture"><img src="img/11.jpg" alt="_blank"></a>
+        <a href="img/12.jpg" data-lightbox="gallery" data-title="picture"><img src="img/12.jpg" alt="_blank"></a>
+        <a href="img/13.jpg" data-lightbox="gallery" data-title="picture"><img src="img/13.jpg" alt="_blank"></a>
+        <a href="img/14.jpg" data-lightbox="gallery" data-title="picture"><img src="img/14.jpg" alt="_blank"></a>
+        <a href="img/15.jpg" data-lightbox="gallery" data-title="picture"><img src="img/15.jpg" alt="_blank"></a>
+        <a href="img/16.jpg" data-lightbox="gallery" data-title="picture"><img src="img/16.jpg" alt="_blank"></a>
+        <a href="img/17.jpg" data-lightbox="gallery" data-title="picture"><img src="img/17.jpg" alt="_blank"></a>
+        <a href="img/18.jpg" data-lightbox="gallery" data-title="picture"><img src="img/18.jpg" alt="_blank"></a>
+    </div>
+    </div>
+    </div>
+    <footer>
+        Copyright © Tours & Travels. All Rights Reserved and Contact Us: +91 90000 00000
+    </footer>
+</body>
+</html>
