@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations Gallery</title>
-    <link rel="stylesheet" href="css/cfloat.css">
 	<link rel="stylesheet" href="css/lightbox.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/cycle2.js"></script>
 	<script type="text/javascript" src="js/declarativeToggle.js"></script>
-	<script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
         *{
@@ -19,10 +22,10 @@
         }
         body{
             height: 100%;
-            background: #84e8dc;
-            background: -moz-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
-            background: -webkit-linear-gradient(-45deg, #84e8dc 0%, #f4ed8b 100%);
-            background: linear-gradient(135deg, #80dfd4 0%, #ece57c 100%);
+            background: rgba(34, 193, 195,0.85);
+            background: -moz-linear-gradient(-45deg, rgba(34, 193, 195, 0.85) 0%, rgba(253, 187, 45, 0.85) 100%);
+            background: -webkit-linear-gradient(-45deg,rgba(34, 193, 195, 0.85)  0%, rgba(253, 187, 45, 0.85) 100%);
+            background: linear-gradient(99deg, rgba(34, 193, 195, 0.85) 0%, rgba(253, 187, 45, 0.85) 100%);
         }
         .thumbnails{
             margin-left: 75px;
@@ -30,7 +33,7 @@
             
         }
         .thumbnails a{
-            float: left;                                                                  /*if we are using float then we need to add an additional class (group) to clear the float of its children*/
+            float: left;                                                                
             width: 200px; 
             
             margin-bottom: 5px;
@@ -43,12 +46,14 @@
         .thumbnails img{
             width: 200px;
             height: 150px;
-            display: block;                                                             /* to avoid additional spacing due to margins and padding as images are inline elements by default*/
+            display: block;                                                             
             transition: all 0.2s ease-in-out;
+            border: 2px solid white;
+            border-radius: 10px;
             /*margin-right: 15px;*/
         }
 
-        .thumbnails:hover img{                                                                                 /* when parents div thumbnail is selected and hovered over .. all images are selected */
+        .thumbnails:hover img{                                                                                 
             opacity: 0.6;
             transform: scale(0.92);
         }
@@ -66,7 +71,7 @@
             width: 100%;
             height: 40px;
             font-size: small;
-            background: rgba(0, 0, 0, 0.719);
+            background: rgba(0, 0, 0, 0.815);
             color: white;
             display: flex;
             align-items: center;
@@ -76,11 +81,11 @@
             /*border-top: 3px solid #e5e9dc;
             border-bottom: 3px solid #e5e9dc;*/
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size:26px;
-            margin-top: 20px;
+            font-size:22px;
+            margin-top: 70px;
             text-align: center;
-            font-style: bold;
-            color:darkslategray;
+            /*font-style: bold;
+            color:darkslategray;*/
         }
 
         .main-area{
@@ -90,11 +95,46 @@
             box-sizing: border-box;
             
         }
+        
+        
     </style>
 </head>
 <body>
     <div class="content-area group">
-    <h1>Explore India!</h1>
+        <div id="nav">
+    
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-bottom border-light" style="position: fixed; top: 0; width: 100%; left: 0px;">
+                <!-- Brand -->
+                <a class="navbar-brand" href="home.html"><img src="img/output-onlinepngtools (1).png" alt="_blank" style="width: 30px; height: 30px; object-fit: contain;" ></a>
+        
+                <!--Search Bar-->
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                <!-- Links -->
+                <ul class="navbar-nav nav-item ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"></a>
+                       
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="about.html">About</a>
+                          <a class="dropdown-item" href="contact.html">Contact</a>
+                          <a class="dropdown-item" href="index.html">Exit</a>
+                        </div>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                  </li>
+              
+                 
+                </ul>
+                
+              </nav>
+
     <div class="main-area" >
     <div class="thumbnails group">
         <a href="img/1.jpg" data-lightbox="gallery" data-title="picture"><img src="img/1.jpg" alt="_blank"></a>
