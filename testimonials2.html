@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/testimonialjs.js"></script>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <!--<link rel="styelsheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/bootstrap.min.css">-->
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: black;
+            /*-webkit-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: brightness(50%);*/
+            background: rgba(34, 193, 195,0.86);
+            background: -moz-linear-gradient(-45deg, rgba(110, 71, 105, 0.85) 0%, rgba(216, 163, 49, 0.85) 100%);
+            background: -webkit-linear-gradient(-45deg,rgba(78, 61, 78, 0.85)  0%, rgba(230, 172, 49, 0.85) 100%);
+            background: linear-gradient(99deg, rgba(83, 60, 83, 0.85) 0%, rgba(209, 158, 48, 0.85) 100%);
+            
+
+        }
+        .container{
+            width: 60%;
+            height: 260px;
+            position: relative;
+            margin: 20px;
+          
+            margin: 0 auto;
+            
+          
+        }
+        .box{
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: 60px;
+            /*left: 0;*/
+            /*opacity: 0.8;*/
+        
+        }
+        .stack-2{
+            z-index: -9;
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+        .stack-3{
+            z-index: -18;
+            margin-top: 400px;
+            margin-left: 200px;
+        }
+        .container .box .img img{
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+        .container .box h2{
+            color: #ea830e;
+            font-size: 1em;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .container .stack-2 h2{
+            color: whitesmoke;
+        }
+        
+        .container .box p{
+            font-size: 1em;
+            color: rgb(65, 65, 65);
+            width: 60%;
+            margin: 15px auto;
+            text-align: center;
+        }
+        .container .stack-2 p{
+            color: #eee;
+        }
+        .stack-2:hover{
+            z-index: 9;
+            /*transition: .10s;*/
+        }
+        .stack-3:hover{
+            z-index: 18;
+            /*transition: .10s;*/
+        }
+        .box:hover{
+           transform: scale(1.08);
+           transition: transform .7s;
+           border: 4px solid #ea830e;
+        }
+
+
+        #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+       
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    
+    
+    <div class="container">
+        <div class="item">
+        <div class="box" style="background: whitesmoke;">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+       
+        </div>
+        <div class="box stack-2" style="background-image: url(img/p1.jpg); background-size: cover; background-repeat: no-repeat;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+        <div class="box stack-3" style="background: whitesmoke;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+    </div>
+
+
+
+    <div class="item">
+        <div class="box" style="background: whitesmoke;">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+       
+        </div>
+        <div class="box stack-2" style="background-image: url(img/p1.jpg); background-size: cover; background-repeat: no-repeat;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+        <div class="box stack-3" style="background: whitesmoke;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div class="box" style="background: whitesmoke;">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+       
+        </div>
+        <div class="box stack-2" style="background-image: url(img/p1.jpg); background-size: cover; background-repeat: no-repeat;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+        <div class="box stack-3" style="background: whitesmoke;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>                    
+            
+            <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+            <h2>Lorem De Ipsum</h2>
+        </div>
+    </div>
+
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#quote-carousel" data-slide-to="1"></li>
+            <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+    
+
+    </div>
+
+
+</body>
+</html>
