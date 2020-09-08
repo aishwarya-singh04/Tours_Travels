@@ -193,8 +193,47 @@
     </style>
 </head>
 <body>
+<div>
+  <div id="nav">
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-bottom border-light" style="position: fixed; top: 0; width: 100%; left: 0px;">
+        <!-- Brand -->
+        <a class="navbar-brand" href="home.html"><img src="img/output-onlinepngtools (1).png" alt="_blank" style="width: 30px; height: 30px; object-fit: contain;" ></a>
+
+        <!--Search Bar-->
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        <!-- Links -->
+        <ul class="navbar-nav nav-item ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"></a>
+               
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About</a>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                  <a class="dropdown-item" href="testimonials3.html">Testimonials</a>
+                   <a class="dropdown-item" href="imageGallery.html">Gallery</a>
+                  <a class="dropdown-item" href="index.html">Exit</a>
+                </div>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+      
+         
+        </ul>
+        
+      </nav>
+    </div>
+
+
     <div class="b">
-    <div class="header">
+    <div class="header" style="margin-top: 60px;">
         <img src="img/header.jpg" alt="_blank">
         <h2>About Us</h2>
     </div>
@@ -299,16 +338,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="home.html">Home</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="login.html">Log In</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="signup.html">Sign Up</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="about.html">About Us</a>
           </li>
         </ul>
 
@@ -323,16 +362,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="contact.html">Contact Us</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="testimonials3.html">Testimonials</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="imageGallery.html">Tours Gallery</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="index.html">Tours & Travels</a>
           </li>
         </ul>
 
@@ -353,8 +392,11 @@
     <li class="list-inline-item">
       <h5 class="mb-1" style="color: white;">Register for free</h5>
     </li>
-    <li class="list-inline-item">
-      <a href="signup.html" class="btn btn-outline-white btn-rounded" style="color: white; border:2px solid white; border-radius: 20px;">Sign up!</a>
+    <li class="list-inline-item" style="color: white;">
+      <a href="signup.html" class="btn btn-outline-white btn-rounded" style="color: white; border-radius: 20px; padding: 8px 20px; background-color: rgb(253, 63, 5);">
+        Sign up</a>
+        /
+        <strong><a href="login.html" style="color:rgb(253, 63, 5) ; font: lighter; letter-spacing: 1.5px;">Login</a></strong>
 
     </li>
   </ul>
